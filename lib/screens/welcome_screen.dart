@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:medical_healthcare_app/screens/login_screen.dart';
+import 'package:medical_healthcare_app/screens/signup_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -65,6 +67,72 @@ class WelcomeScreen extends StatelessWidget {
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
               ),
+            ),
+            SizedBox(
+              height: 60,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Material(
+                  color: Color(
+                    0xFF7165D6,
+                  ),
+                  borderRadius: BorderRadius.circular(10),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginScreen(),
+                          ));
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: 15,
+                        horizontal: 40,
+                      ),
+                      child: Text(
+                        'Log In',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Material(
+                  color: Color(
+                    0xFF7165D6,
+                  ),
+                  borderRadius: BorderRadius.circular(10),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SignUpScreen(),
+                          ));
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: 15,
+                        horizontal: 40,
+                      ),
+                      child: Text(
+                        'Sign Up',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
