@@ -230,28 +230,51 @@ class HomeScreen extends StatelessWidget {
               return InkWell(
                 onTap: () {},
                 child: Container(
-                    margin: EdgeInsets.all(10),
-                    padding: EdgeInsets.symmetric(vertical: 15),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black12,
-                          blurRadius: 4,
-                          spreadRadius: 2,
+                  margin: EdgeInsets.all(10),
+                  padding: EdgeInsets.symmetric(vertical: 15),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black12,
+                        blurRadius: 4,
+                        spreadRadius: 2,
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      CircleAvatar(
+                        radius: 35,
+                        backgroundImage: AssetImage("images/${imgs[index]}"),
+                      ),
+                      Text(
+                        "Dr. Doctor Name",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black54,
                         ),
-                      ],
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        CircleAvatar(
-                          radius: 35,
-                          backgroundImage: AssetImage("images/${imgs[index]}"),
-                        )
-                      ],
-                    )),
+                      ),
+                      Text(
+                        "Therapist",
+                        style: TextStyle(color: Colors.black45),
+                      ),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Colors.amber,
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
               );
             },
           ),
