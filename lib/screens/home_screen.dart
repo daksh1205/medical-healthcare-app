@@ -256,7 +256,8 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         radius: 35,
-                        backgroundImage: AssetImage("images/${imgs[index]}"),
+                        backgroundImage:
+                            AssetImage("lib/images/${imgs[index]}"),
                       ),
                       Text(
                         "Dr. Doctor Name",

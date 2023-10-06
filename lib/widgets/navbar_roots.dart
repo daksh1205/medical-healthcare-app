@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:medical_healthcare_app/screens/appointment_screen.dart';
 import 'package:medical_healthcare_app/screens/home_screen.dart';
 import 'package:medical_healthcare_app/screens/messages_screen.dart';
+import 'package:medical_healthcare_app/screens/schedule_screen.dart';
 import 'package:medical_healthcare_app/screens/settings_screen.dart';
 
 class NavBarRoots extends StatefulWidget {
@@ -20,7 +21,7 @@ class _NavBarRootsState extends State<NavBarRoots> {
     // Messages Screen
     MessagesScreen(),
     // Schedule Screen
-    AppointmentScreen(),
+    ScheduleScreen(),
     // Settings Screen
     SettingScreen(),
   ];
