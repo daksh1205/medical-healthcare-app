@@ -122,7 +122,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Text(
-                                "Pending",
+                                "Left Over",
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w500,
